@@ -8,12 +8,16 @@ attrs==20.3.0
     # via scantree
 certifi==2020.12.5
     # via requests
+cffi==1.14.5
+    # via cryptography
 chardet==4.0.0
     # via requests
 click==7.1.2
     # via flytekit
 croniter==1.0.8
     # via flytekit
+cryptography==3.4.7
+    # via secretstorage
 cycler==0.10.0
     # via matplotlib
 dataclasses-json==0.5.2
@@ -26,7 +30,7 @@ dirhash==0.2.1
     # via flytekit
 docker-image-py==0.1.10
     # via flytekit
-flyteidl==0.18.25
+flyteidl==0.19.0
     # via flytekit
 flytekit==0.17.0b1
     # via -r ../../common/requirements-common.in
@@ -38,6 +42,10 @@ idna==2.10
     # via requests
 importlib-metadata==3.7.3
     # via keyring
+jeepney==0.6.0
+    # via
+    #   keyring
+    #   secretstorage
 joblib==1.0.1
     # via
     #   -r requirements.in
@@ -74,7 +82,7 @@ pandas==1.2.3
     # via flytekit
 pathspec==0.8.1
     # via scantree
-pillow==8.1.2
+pillow==8.2.0
     # via matplotlib
 protobuf==3.15.6
     # via
@@ -84,6 +92,8 @@ py==1.10.0
     # via retry
 pyarrow==3.0.0
     # via flytekit
+pycparser==2.20
+    # via cffi
 pyparsing==2.4.7
     # via matplotlib
 python-dateutil==2.8.1
@@ -116,6 +126,8 @@ scipy==1.6.1
     # via
     #   scikit-learn
     #   xgboost
+secretstorage==3.3.1
+    # via keyring
 six==1.15.0
     # via
     #   cycler
